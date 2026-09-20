@@ -7,11 +7,13 @@
     <meta name="theme-color" content="#ffd510" />
     <meta property="og:title" content="Sidequests Early Access" />
     <meta property="og:description" content="Explore your surroundings, capture what you find, and build your collection. Join the private beta." />
-    <meta property="og:image" content="https://pocketpowered.org/sidequests/assets/skyline.png" />
+    <meta property="og:image" content="https://pocketpowered.org/sidequests/assets/marketing-2026-09/play-feature-graphic.png" />
     <meta property="og:url" content="https://pocketpowered.org/sidequests/" />
+    <meta property="og:image:alt" content="Sidequests: photo quests, starring our pigeon with a camera" />
     <meta name="twitter:card" content="summary_large_image" />
     <title>Sidequests Early Access · Pocket Powered</title>
     <link rel="stylesheet" href="/styles.css?v=sidequests-skyline-card-2" />
+    <link rel="stylesheet" href="/sidequests/marketing-2026-09.css" />
     <script is:inline src="/sidequests/sidequests.js?v=sidequests-cta-scroll-1" defer></script>
   </head>
   <body class="sidequests-page">
@@ -26,21 +28,53 @@
     <main>
       <section class="sq-hero shell">
         <div class="sq-hero__copy">
-          <p class="brand-chip">SIDEQUESTS</p>
+          <div class="sq-identity"><img src="/sidequests/assets/marketing-2026-09/pigeon-icon.webp" alt="Sidequests pigeon holding a yellow camera" width="112" height="112" /><p class="brand-chip">SIDEQUESTS</p></div>
           <h1>Your next walk is full of sidequests.</h1>
-          <p class="sq-hero__lede">Complete quests by exploring your surroundings and capturing what you find. Build a collection of the city through your eyes.</p>
+          <p class="sq-hero__lede">Spot something worth noticing. Capture it, see how your photo meets the quest, and turn your find into a little win.</p>
           <div class="hero-actions">
             <a class="button button--yellow" href="#access" data-smart-cta>Get early access</a>
+            <a class="text-link" href="#how-it-works">See a find come to life <span aria-hidden="true">↓</span></a>
           </div>
         </div>
 
-        <div class="sq-hero__visual" aria-label="A preview of Sidequests pack artwork">
-          <img class="skyline-sticker" src="/sidequests/assets/skyline.png" alt="Illustrated New York skyline with a yellow taxi" />
-          <div class="pack-stack" aria-hidden="true">
-            <img class="pack-card pack-card--one" src="/sidequests/assets/starter-pack.jpg" alt="" />
-            <img class="pack-card pack-card--two" src="/sidequests/assets/park-life.jpg" alt="" />
-            <img class="pack-card pack-card--three" src="/sidequests/assets/feline-frenzy.jpg" alt="" />
+        <figure class="sq-capture-hero">
+          <img src="/sidequests/assets/marketing-2026-09/03-result.webp" alt="A completed water tower find in Sidequests, with the captured photo and 60 XP earned" width="660" height="1434" fetchpriority="high" />
+          <figcaption>A rooftop detail. A photo quest. A find worth keeping.</figcaption>
+        </figure>
+      </section>
+
+      <section class="how-it-works sq-capture-flow" id="how-it-works" aria-labelledby="capture-title">
+        <div class="shell">
+          <div class="section-heading section-heading--center">
+            <h2 id="capture-title">From “look at that” to “look what I found.”</h2>
+            <p>Here’s one water tower’s journey from a photo to a completed sidequest.</p>
           </div>
+          <div class="product-showcase" data-product-showcase aria-label="Capture, grading, and result">
+            <figure class="product-showcase__step">
+              <div class="product-showcase__shot">
+                <img src="/sidequests/assets/marketing-2026-09/01-capture.webp" alt="The Sidequests camera with a rooftop water tower in frame and the required-photo checklist" width="660" height="1434" loading="lazy" />
+              </div>
+              <figcaption><span>01</span><h3>See it. Capture it.</h3><p>Use the quest checklist to frame your find. Review your photo before you submit it.</p></figcaption>
+            </figure>
+            <figure class="product-showcase__step">
+              <div class="product-showcase__shot">
+                <img src="/sidequests/assets/marketing-2026-09/02-verdict.webp" alt="The grading breakdown: rooftop water tower requirement met for 45 XP and skyline context bonus earned for 15 XP" width="660" height="1434" loading="lazy" />
+              </div>
+              <figcaption><span>02</span><h3>See what counts.</h3><p>Get a requirement-by-requirement breakdown, including any bonus details and the XP you earned.</p></figcaption>
+            </figure>
+            <figure class="product-showcase__step">
+              <div class="product-showcase__shot">
+                <img src="/sidequests/assets/marketing-2026-09/03-result.webp" alt="Completed water tower find with 60 XP earned and audience set to Just me" width="660" height="1434" loading="lazy" />
+              </div>
+              <figcaption><span>03</span><h3>Keep the little win.</h3><p>Save the moment in your collection, choose who can see it, and head out for your next find.</p></figcaption>
+            </figure>
+          </div>
+          <div class="product-showcase__stepper" data-product-stepper aria-label="Walkthrough navigation">
+            <button type="button" data-product-step-previous aria-label="Previous walkthrough step">←</button>
+            <span class="product-showcase__step-count" aria-live="polite" aria-atomic="true"><strong data-product-step-current>01</strong><span aria-hidden="true">/</span><span data-product-step-total>03</span></span>
+            <button type="button" data-product-step-next aria-label="Next walkthrough step">→</button>
+          </div>
+          <p class="sq-screen-note">App screens shown with a sample photo and demo results.</p>
         </div>
       </section>
 
@@ -105,127 +139,15 @@
         </div>
       </section>
 
-      <section class="how-it-works" id="how-it-works">
-        <div class="shell">
-          <div class="section-heading section-heading--center">
-            <p class="kicker">How it works</p>
-            <h2>A sidequest in four steps.</h2>
-          </div>
-
-          <div class="product-showcase" data-product-showcase aria-label="A Sidequests find from criteria to completion">
-            <figure class="product-showcase__step">
-              <div class="product-showcase__shot">
-                <img
-                  src="/sidequests/assets/walkthrough/01-criteria.png"
-                  alt="The Subway entrance quest showing two required criteria and two optional bonus criteria"
-                  width="720"
-                  height="1600"
-                />
-              </div>
-              <figcaption>
-                <span>01</span>
-                <h3>Check the criteria</h3>
-                <p>Know the must-haves and bonus details before taking the shot.</p>
-              </figcaption>
-            </figure>
-
-            <figure class="product-showcase__step">
-              <div class="product-showcase__shot">
-                <img
-                  src="/sidequests/assets/walkthrough/02-submit.png"
-                  alt="The photo review screen showing a subway entrance image and the Submit photo button"
-                  width="720"
-                  height="1600"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption>
-                <span>02</span>
-                <h3>Submit the photo</h3>
-                <p>Review your find against every requirement before sending it.</p>
-              </figcaption>
-            </figure>
-
-            <figure class="product-showcase__step">
-              <div class="product-showcase__shot">
-                <img
-                  src="/sidequests/assets/walkthrough/03-checking.png"
-                  alt="The checking screen preparing the photo for grading"
-                  width="720"
-                  height="1600"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption>
-                <span>03</span>
-                <h3>Get it graded</h3>
-                <p>The app checks the image against the quest criteria.</p>
-              </figcaption>
-            </figure>
-
-            <figure class="product-showcase__step">
-              <div class="product-showcase__shot">
-                <img
-                  src="/sidequests/assets/walkthrough/04-complete.png"
-                  alt="The result screen confirming all requirements were met and awarding 35 XP"
-                  width="720"
-                  height="1600"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption>
-                <span>04</span>
-                <h3>Complete the find</h3>
-                <p>See what passed, collect your XP, and move to the next quest.</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="product-showcase__stepper" data-product-stepper aria-label="Walkthrough navigation">
-            <button type="button" data-product-step-previous aria-label="Previous walkthrough step">←</button>
-            <span class="product-showcase__step-count" aria-live="polite" aria-atomic="true">
-              <strong data-product-step-current>01</strong>
-              <span aria-hidden="true">/</span>
-              <span data-product-step-total>04</span>
-            </span>
-            <button type="button" data-product-step-next aria-label="Next walkthrough step">→</button>
-          </div>
-
-          <div class="product-outcomes" aria-label="What happens after completing a find">
-            <figure class="product-outcome">
-              <figcaption>
-                <p class="kicker">Keep exploring</p>
-                <h3>Build your collection</h3>
-                <p>Every accepted photo lands in your Field Journal with its XP and pack progress.</p>
-              </figcaption>
-              <div class="product-showcase__shot product-outcome__shot">
-                <img
-                  src="/sidequests/assets/walkthrough/05-collection.png"
-                  alt="A populated Sidequests Field Journal showing six captured finds and earned XP"
-                  width="720"
-                  height="1600"
-                  loading="lazy"
-                />
-              </div>
-            </figure>
-
-            <figure class="product-outcome">
-              <figcaption>
-                <p class="kicker">Stay connected</p>
-                <h3>Share with friends</h3>
-                <p>Choose the finds friends can see, then trade reactions and ideas for what to try next.</p>
-              </figcaption>
-              <div class="product-showcase__shot product-outcome__shot">
-                <img
-                  src="/sidequests/assets/walkthrough/06-friends.png"
-                  alt="The Sidequests Friend Finds feed showing a garden cat shared by a friend"
-                  width="720"
-                  height="1600"
-                  loading="lazy"
-                />
-              </div>
-            </figure>
-          </div>
-        </div>
+      <section class="sq-more-finds shell" aria-label="Keep exploring with Sidequests">
+        <figure>
+          <img src="/sidequests/assets/marketing-2026-09/06-pack.webp" alt="Starter Pack in Sidequests showing photo quests and pack progress" width="660" height="1434" loading="lazy" />
+          <figcaption><h2>A little direction for your next wander.</h2><p>Pick a pack, browse its quests, and follow whatever catches your eye. There’s no need to plan the whole day.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="/sidequests/assets/marketing-2026-09/07-profile.webp" alt="Sidequests profile showing an explorer’s level, XP, and activity" width="660" height="1434" loading="lazy" />
+          <figcaption><h2>Every find adds to your story.</h2><p>Your discoveries build a collection and earn XP along the way. See your progress, then find a reason to head out again.</p></figcaption>
+        </figure>
       </section>
 
       <section class="access-section shell" id="access" aria-labelledby="access-title">
